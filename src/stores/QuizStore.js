@@ -98,7 +98,6 @@ export const useQuizStore = defineStore('QuizStore', {
       this.questionsAnswered++
     },
     addNewQuestion(form) {
-      console.log(form)
       this.questions.push(form)
     },
     addTopScorer(form) {

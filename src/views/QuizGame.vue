@@ -30,20 +30,17 @@ const visibleModal = ref(false)
 
 const handleOkHandler = (name) => {
   const form = { name: name, score: quizStore.totalCorrect }
-  console.log(form)
   quizStore.addTopScorer(form)
   visibleModal.value = false
 }
 
 const handlecancel = () => {
-  console.log(visibleModal.value)
   visibleModal.value = false
 }
 
 watch(questionsAnswered, () => {
   if (quizStore.questionsAnswered === quizStore.questionaireLength) {
     visibleModal.value = true
-    console.log(visibleModal.value)
   }
 })
 </script>

@@ -28,8 +28,6 @@ const { collapsed } = toRefs(props)
 const selectedKeys = ref(['1'])
 
 watch(selectedKeys, (watch) => {
-  console.log('check')
-
   selectedKeys.value = watch
 })
 </script>

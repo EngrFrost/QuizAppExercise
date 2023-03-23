@@ -25,5 +25,4 @@ const okHandler = () => {
 const cancelHandler = () => {
   emits('handlecancel')
 }
-console.log(visibleModal.value)
 </script>
