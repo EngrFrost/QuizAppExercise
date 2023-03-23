@@ -1,6 +1,8 @@
 <template>
-  <h5>Top Scorer</h5>
-  <TableScorer :columns="columns" :data="data" />
+  <div class="quiz-games">
+    <h5>Top Scorer</h5>
+    <TableScorer :columns="columns" :data="data" />
+  </div>
 </template>
 
 <script setup>
@@ -25,3 +27,11 @@ const columns = [
 
 const data = topScorer
 </script>
+
+<style>
+@media (min-width: 1024px) {
+  .quiz-games {
+    min-height: 100vh;
+  }
+}
+</style>
